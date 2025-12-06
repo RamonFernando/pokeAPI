@@ -12,7 +12,7 @@ namespace pokeAPI
 {
     internal class SearchByMoves
     {
-        public async Task RequestSearchByMoves()
+        public static async Task RequestSearchByMoves()
         {
             Console.WriteLine("Introduce el movimiento del pokemon a buscar: ");
             string? moves = Console.ReadLine();
@@ -63,7 +63,7 @@ namespace pokeAPI
                 ).ToList();
             
             // 4. Mostramos el resultado
-            return filteredPokemons?.Count > 0 ? filteredPokemons : null;
+            return (filteredPokemons?.Count > 0) ? filteredPokemons : null;
         }
     }
 }

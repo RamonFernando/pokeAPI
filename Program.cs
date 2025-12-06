@@ -12,9 +12,9 @@ using static pokeAPI.SearchById;
 using static pokeAPI.SearchByHeight;
 using static pokeAPI.SearchByType;
 using static pokeAPI.SearchByMass;
-using static pokeAPI.Pokemon;
-using static pokeAPI.SavePokemonList;
 using static pokeAPI.APILoadJson;
+using static pokeAPI.APIRemoveFavoriteList;
+using static pokeAPI.SearchByMoves;
 
 namespace pokeAPI
 {
@@ -69,10 +69,11 @@ namespace pokeAPI
                             break;
                         case 7:
                             // Filtrar por movimientos
-                            // await RequestSearchByMoves();
+                            await RequestSearchByMoves();
                             break;
                         case 8:
                             // Borrar pokemon de Lista favoritos
+                            RequestRemoveFavoriteList();
                             break;
                         case 9:
                             // Mostrar Lista API
