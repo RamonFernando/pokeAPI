@@ -38,7 +38,7 @@ namespace pokeAPI
                 return;
             }
 
-            Console.WriteLine($"Lista de pokemons con el movimiento {moves}: ");
+            Console.WriteLine($"--- Lista de Pokemons con el movimiento {moves} ---");
             PrintPokemonsList(result);
             PrintWaitForPressKey();
         }
