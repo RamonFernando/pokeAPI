@@ -1,15 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+
 using System.Text.Json;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
+using System.Text.Json.Serialization;
 
 using static pokeAPI.Program;
 using static pokeAPI.APIControllers;
 using static pokeAPI.Helpers;
-using System.Text.Json.Serialization;
+
 using static pokeAPI.Views;
+using static pokeAPI.HttpClientService;
 
 namespace pokeAPI
 {

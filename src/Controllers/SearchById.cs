@@ -1,10 +1,12 @@
 using System.Text.Json;
+using System.Net;
 
 using static pokeAPI.Pokemon;
 using static pokeAPI.APIControllers;
 using static pokeAPI.Program;
 using static pokeAPI.Views;
-using System.Net;
+using static pokeAPI.HttpClientService;
+
 
 
 

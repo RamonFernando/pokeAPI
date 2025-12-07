@@ -2,8 +2,9 @@
 using System.Text.Json;
 using static pokeAPI.Program;
 using static pokeAPI.APIControllers;
-
+using static pokeAPI.HttpClientService;
 using static pokeAPI.Views;
+
 
 namespace pokeAPI
 {

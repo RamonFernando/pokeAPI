@@ -8,6 +8,7 @@ using static pokeAPI.Program;
 using static pokeAPI.APIControllers;
 using static pokeAPI.Pokemon;
 using static pokeAPI.Views;
+using static pokeAPI.HttpClientService;
 
 namespace pokeAPI
 {

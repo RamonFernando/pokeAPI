@@ -1,10 +1,24 @@
 
 using System.Text.Json;
+using static pokeAPI.APIControllers;
 
 namespace pokeAPI
 {
     internal class Helpers
     {
+        // Metodos aux para garantizar validacion (si esta vacio no se actualiza)
+        public static string? UpdateIfNotEmpty(string? input, string? value) =>
+            string.IsNullOrWhiteSpace(input) ? value : input.Trim();
+
+        public static double UpdateIfNotEmptyDouble(string? input, double value) {
+            double InputValidated = ValidateInputDouble(input);
+            return InputValidated == -1 ? value : InputValidated;
+        }
+
+        public static List<string> UpdateIfNotEmptyList(string? input, List<string> value) =>
+            string.IsNullOrWhiteSpace(input) ? value : input.Split(',').Select(vl => vl.Trim()).ToList();
+        
+        // Manejo de excepciones
         public static void HandlerException(Exception ex)
         {
             if (ex is HttpRequestException HttpEx)

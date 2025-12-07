@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using static pokeAPI.Program;
 using static pokeAPI.APIControllers;
 using static pokeAPI.Views;
+using static pokeAPI.HttpClientService;
 
 
 namespace pokeAPI
@@ -60,7 +61,7 @@ namespace pokeAPI
             // 2. Lectura del JSON y validacion
             var json = await response.Content.ReadAsStringAsync();
             var pokemonList = JsonSerializer.Deserialize<List<Pokemon>>(json);
-            if(json is null) return null;
+            if(pokemonList is null) return null;
             
             // 3. Busqueda del Pokemon por movimientos
             var filteredPokemons = pokemonList?

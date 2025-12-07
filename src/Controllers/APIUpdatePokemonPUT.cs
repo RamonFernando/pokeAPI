@@ -2,17 +2,20 @@
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
+
 using static pokeAPI.Program;
 using static pokeAPI.Views;
 using static pokeAPI.APIControllers;
 using static pokeAPI.SearchById;
+using static pokeAPI.Helpers;
+using static pokeAPI.HttpClientService;
+
 
 namespace pokeAPI
 {
     public class APIUpdatePokemonPUT
     {
-        public async Task RequestUpdatePokemonPUT()
+        public static async Task RequestUpdatePokemonPUT()
         {
             // 1. Peticion al usuario y validacion de entrada
             Console.WriteLine("\n----- Actualizar Pokemon -----");
@@ -79,9 +82,8 @@ namespace pokeAPI
             PrintPokemon(pokemonUpdate);
             PrintWaitForPressKey();
         }
-        private readonly HttpClient client = new HttpClient();
 
-        public async Task<string> UpdatePokemonPUT(int id, object data)
+        public static async Task<string> UpdatePokemonPUT(int id, object data)
         {
             // 1. Peticion HTTP del JSON
             var url = $"{BASE_URL}/{id}";
@@ -105,16 +107,6 @@ namespace pokeAPI
             return pokemon; // Devuelve el pokemon actualizado (objeto JSON)
         }
 
-        // Metodos aux para garantizar validacion (si esta vacio no se actualiza)
-        private static string? UpdateIfNotEmpty(string? input, string? value) =>
-            string.IsNullOrWhiteSpace(input) ? value : input.Trim();
-
-        private static double UpdateIfNotEmptyDouble(string? input, double value) {
-            double InputValidated = ValidateInput(input);
-            return InputValidated == -1 ? value : InputValidated;
-        }
-
-        private static List<string> UpdateIfNotEmptyList(string? input, List<string> value) =>
-            string.IsNullOrWhiteSpace(input) ? value : input.Split(',').Select(vl => vl.Trim()).ToList();
+        
     } // APIUpdatePokemonPUT
 }

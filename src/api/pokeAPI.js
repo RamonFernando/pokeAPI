@@ -3,7 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 // leer el archivo
-const filePath = path.join(__dirname, 'pokemons.json');
+// const filePath = path.join(__dirname, 'pokemons.json');
+const filePath = path.join(__dirname, '..', 'json', 'pokemons.json');
+
 const data = fs.readFileSync(filePath, 'utf-8');
 const pokemons = JSON.parse(data);
 
