@@ -67,9 +67,9 @@ La aplicación se iniciará, mostrará el menú principal por consola y comenzar
 
 Estructura del proyecto.
 pokeAPI - 
-Programs.cs
-pokeAPI.csproj
-pokeAPI.sln
+* Programs.cs
+* pokeAPI.csproj
+* pokeAPI.sln
 
 .vscode
   settings.jsn
