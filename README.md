@@ -82,28 +82,28 @@ src (
               - APIAddFavoriteList.cs
               - APIControllers.cs
               - APIDeletePokemonDELETE.cs
-              APIRemoveFavoriteList.cs
-              APIUpdatePokemonPUT.cs
-              SearchByHeight.cs
-              SearchById.cs
-              SearchByMass.cs
-              SearchByMoves.cs
-              SearchByName.cs
-              SearchByType.cs
+              - APIRemoveFavoriteList.cs
+              - APIUpdatePokemonPUT.cs
+              - SearchByHeight.cs
+              - SearchById.cs
+              - SearchByMass.cs
+              - SearchByMoves.cs
+              - SearchByName.cs
+              - SearchByType.cs
  
    * Helpers
-              Helpers.cs
-              APIValidatorInputs.cs
+              - Helpers.cs
+              - APIValidatorInputs.cs
 
    * Models
-              Models.cs
+              - Models.cs
 
    * Services
-               APILoadJson.cs
-               APISaveJson.cs
-               HttpClientService.cs
+               - APILoadJson.cs
+               - APISaveJson.cs
+               - HttpClientService.cs
 
   * Views
-              GetRequestAPI.cs
-              Views.cs )
+              - GetRequestAPI.cs
+              - Views.cs )
 * obj
