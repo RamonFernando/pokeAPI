@@ -65,53 +65,45 @@ La aplicación se iniciará, mostrará el menú principal por consola y comenzar
 
 ````
 
-🧩 1. Estructura general del proyecto
-pokeAPI/
-│
-├── Program.cs
-├── pokeAPI.csproj
-├── pokeAPI.sln
-│
-├── .vscode/
-│   └── settings.json
-│
-├── src/
-│   ├── app/
-│   │   └── App.cs
-│   │
-│   ├── Controllers/
-│   │   ├── APIAddFavoriteList.cs
-│   │   ├── APIControllers.cs
-│   │   ├── APIDeletePokemonDELETE.cs
-│   │   ├── APIRemoveFavoriteList.cs
-│   │   ├── APIUpdatePokemonPUT.cs
-│   │   ├── SearchByHeight.cs
-│   │   ├── SearchById.cs
-│   │   ├── SearchByMass.cs
-│   │   ├── SearchByMoves.cs
-│   │   ├── SearchByName.cs
-│   │   └── SearchByType.cs
-│   │
-│   ├── Helpers/
-│   │   ├── Helpers.cs
-│   │   └── APIValidatorInputs.cs
-│   │
-│   ├── Models/
-│   │   └── Models.cs
-│   │
-│   ├── Services/
-│   │   ├── APILoadJson.cs
-│   │   ├── APISaveJson.cs
-│   │   ├── HttpClientService.cs
-│   │   ├── SearchByHeight.cs
-│   │   ├── SearchById.cs
-│   │   ├── SearchByMass.cs
-│   │   ├── SearchByMoves.cs
-│   │   ├── SearchByName.cs
-│   │   └── SearchByType.cs
-│   │
-│   └── Views/
-│       ├── GetRequestAPI.cs
-│       └── Views.cs
-│
-└── obj/
+Estructura del proyecto.
+pokeAPI
+Programs.cs
+pokeAPI.csproj
+pokeAPI.sln
+
+.vscode
+  settings.jsn
+
+src
+   app 
+                AApp.cs
+    
+   Controllers
+              APIAddFavoriteList.cs
+              APIControllers.cs
+              APIDeletePokemonDELETE.cs
+              APIRemoveFavoriteList.cs
+              APIUpdatePokemonPUT.cs
+              SearchByHeight.cs
+              SearchById.cs
+              SearchByMass.cs
+              SearchByMoves.cs
+              SearchByName.cs
+              SearchByType.cs
+ 
+   Helpers
+              Helpers.cs
+              APIValidatorInputs.cs
+
+   Models
+              Models.cs
+
+   Services
+               APILoadJson.cs
+               APISaveJson.cs
+               HttpClientService.cs
+
+  Views
+              GetRequestAPI.cs
+              Views.cs
+obj
