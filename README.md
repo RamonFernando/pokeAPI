@@ -1,6 +1,7 @@
-# PokeAPI — Proyecto Full-Stack (Node.js + C#)
+📘 README — Proyecto PokeAPI (C# Console App)
+📝 Proyecto (Node.js + C#)
 
-Este proyecto combina una **API creada con Node.js** y una **aplicación de consola en C#** que consume dicha API.
+- Este proyecto combina una **API creada con Node.js** y una **aplicación de consola en C#** que consume dicha API.
 Permite realizar búsquedas de Pokémon, filtrarlos por nombre, tipo, movimientos, ID,
 gestionar favoritos y cargar/guardar datos en JSON.
 
