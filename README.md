@@ -76,12 +76,12 @@ pokeAPI -
 
 src (
    * app 
-                AApp.cs
+                - AApp.cs
     
    * Controllers
-              APIAddFavoriteList.cs
-              APIControllers.cs
-              APIDeletePokemonDELETE.cs
+              - APIAddFavoriteList.cs
+              - APIControllers.cs
+              - APIDeletePokemonDELETE.cs
               APIRemoveFavoriteList.cs
               APIUpdatePokemonPUT.cs
               SearchByHeight.cs
