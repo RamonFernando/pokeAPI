@@ -66,7 +66,7 @@ La aplicación se iniciará, mostrará el menú principal por consola y comenzar
 ````
 
 Estructura del proyecto.
-pokeAPI
+pokeAPI - 
 Programs.cs
 pokeAPI.csproj
 pokeAPI.sln
@@ -74,7 +74,7 @@ pokeAPI.sln
 .vscode
   settings.jsn
 
-src
+src (
    app 
                 AApp.cs
     
@@ -105,5 +105,5 @@ src
 
   Views
               GetRequestAPI.cs
-              Views.cs
+              Views.cs )
 obj
