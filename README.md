@@ -75,10 +75,10 @@ pokeAPI -
   settings.jsn
 
 src (
-   app 
+   * app 
                 AApp.cs
     
-   Controllers
+   * Controllers
               APIAddFavoriteList.cs
               APIControllers.cs
               APIDeletePokemonDELETE.cs
@@ -91,19 +91,19 @@ src (
               SearchByName.cs
               SearchByType.cs
  
-   Helpers
+   * Helpers
               Helpers.cs
               APIValidatorInputs.cs
 
-   Models
+   * Models
               Models.cs
 
-   Services
+   * Services
                APILoadJson.cs
                APISaveJson.cs
                HttpClientService.cs
 
-  Views
+  * Views
               GetRequestAPI.cs
               Views.cs )
-obj
+* obj
